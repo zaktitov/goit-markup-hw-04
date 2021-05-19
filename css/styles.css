@@ -226,7 +226,15 @@ p {
   margin-right: 30px;
 }
 
-.features-elemnt::before {
+.features-box {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* .features-elemnt::before {
   content: "";
   display: inline-block;
   width: 100%;
@@ -253,7 +261,7 @@ p {
 
 .features-elemnt:nth-child(4)::before {
   background-image: url(../css/images/astronaut\ 1.svg);
-}
+} */
 
 .features-elemnt:last-child {
   margin-right: 0px;
@@ -465,15 +473,18 @@ p {
 .footer {
   background-color: #2f303a;
   min-height: 252px;
+  padding: 55px;
 }
 
 .footer-container {
   width: 1200px;
-  padding: 55px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: baseline;
+  background: #2f303a;
 }
 
 .logo-bottom {
