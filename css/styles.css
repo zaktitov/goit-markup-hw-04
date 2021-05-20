@@ -228,40 +228,18 @@ p {
 
 .features-box {
   width: 270px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  background-color: var(--buttons-main-bcg);
 }
 
-/* .features-elemnt::before {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
+.icon-features {
+  width: 70px;
+  height: 70px;
 }
-
-.features-elemnt:nth-child(1)::before {
-  background-image: url(../css/images/antenna\ 1.svg);
-}
-
-.features-elemnt:nth-child(2)::before {
-  background-image: url(../css/images/clock\ 1.svg);
-}
-
-.features-elemnt:nth-child(3)::before {
-  background-image: url(../css/images/Vector.svg);
-}
-
-.features-elemnt:nth-child(4)::before {
-  background-image: url(../css/images/astronaut\ 1.svg);
-} */
 
 .features-elemnt:last-child {
   margin-right: 0px;
