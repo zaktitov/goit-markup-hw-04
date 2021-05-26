@@ -20,17 +20,17 @@
       <nav class="nav-flex">
         <a class="logo" href="./index.html">Web<span class="accent-logo">Studio</span></a>
         <ul class="site-nav-list">
-          <li class="site-nav-item link"><a href="./index.html" class="site-nav-item link current">Студия</a></li>
-          <li class="site-nav-item link"><a href="./portfolio.html" class="site-nav-item link">Портфолио</a></li>
-          <li class="site-nav-item link"><a href="" class="site-nav link">Контакты</a></li>
+          <li class="site-nav-item-link"><a href="./index.html" class="site-nav-item-link current">Студия</a></li>
+          <li class="site-nav-item-link"><a href="./portfolio.html" class="site-nav-item-link">Портфолио</a></li>
+          <li class="site-nav-item-link"><a href="" class="site-nav-item-link">Контакты</a></li>
         </ul>
       </nav>
 
 
       <ul class="header-contacts-list">
         <li class="header-contacts-item">
-          <a href="mailto:info@devstudio.com" target="_blank" rel="noreferrer noopener"
-            class="header-contacts-link"><svg class="header-icon" width="16" height="12">
+          <a class="header-contacts-link" href="mailto:info@devstudio.com" target="_blank"
+            rel="noreferrer noopener"><svg class="header-icon" width="16" height="12">
               <use href="./image/symbol-omg2.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
@@ -49,9 +49,10 @@
     <section class="what-we-doing-section">
       <div class="what-we-doing-container">
         <h1 class="main-title-index">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button-index">Заказать услугу</button>
+        <button type="button" class="button-index" data-modal-open>Заказать услугу</button>
       </div>
     </section>
+
 
     <section class="ourfeatures section">
       <div class="ourfeatures container">
@@ -111,13 +112,28 @@
         <h2 class="bottom-titles-index">Чем мы занимаемся</h2>
         <ul class="our-tasks-list">
           <li class="our-tasks-item">
-            <img src="./image/img-1.jpg" alt="разработка" width="370">
+            <div class="our-tasks-thumb">
+              <img src="./image/img-1.jpg" alt="разработка" width="370">
+              <div class="our-tasks-absolute">
+                Десктопные приложения
+              </div>
+            </div>
           </li>
           <li class="our-tasks-item">
-            <img src="./image/img-2.jpg" alt="оптимизация" width="370">
+            <div class="our-tasks-thumb">
+              <img src="./image/img-2.jpg" alt="оптимизация" width="370">
+              <div class="our-tasks-absolute">
+                Мобильные приложения
+              </div>
+            </div>
           </li>
-          <li class="our-tasksitem">
-            <img src="./image/img-3.jpg" alt="реализация" width="370">
+          <li class="our-tasks-item">
+            <div class="our-tasks-thumb">
+              <img src="./image/img-3.jpg" alt="реализация" width="370">
+              <div class="our-tasks-absolute">
+                Дизайнерские решения
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -415,9 +431,23 @@
         </ul>
       </div>
 
-
     </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <div class="modal-window">
+        <button class="modal-icon" type="button" data-modal-close>
+          <svg class="icon-close" width="18" height="18">
+            <use href="./image/symbol-omg3.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+
 </body>
 
 </html>
